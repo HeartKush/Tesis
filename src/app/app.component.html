@@ -1,0 +1,243 @@
+
+<router-outlet>
+    <!--
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+-->
+
+<!--CDN MOMENT-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<!--CDN MOMENT ESPAÑOL-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/es.js"></script>
+<!--CDN JQUERY CLONE-->
+
+
+
+<div class="col-md-12 d-flex justify-content-center">
+
+    <div class="calendar" id="calendar">
+
+        <!--btngroup????-->
+        <div class="calendar_header">
+            <button type="button" class="control carousel--control--prev">&lt;</button>
+            <span class="month-name">octubre</span>
+            <button type="button" class="control carousel--control--next">&gt;</button>
+        </div>
+        <div class="calendar_body ">
+            <div class="grid">
+                <div class="grid_header">
+                    <span class="grid_cell grid_cell-gh">Lun</span>
+                    <span class="grid_cell grid_cell-gh">Mar</span>
+                    <span class="grid_cell grid_cell-gh">Mie</span>
+                    <span class="grid_cell grid_cell-gh">Jue</span>
+                    <span class="grid_cell grid_cell-gh">Vie</span>
+                    <span class="grid_cell grid_cell-gh">Sab</span>
+                    <span class="grid_cell grid_cell-gh">Dom</span>
+                </div>
+                <div class="grid_body">
+                    <span class="grid_cell grid_cell-gd" id="cambio">1</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">2</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">3</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">4</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">5</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">6</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">7</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">8</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">9</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">10</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">11</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">12</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">13</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">14</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">15</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">16</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">17</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">18</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">19</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">20</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">21</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">22</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">23</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">24</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">25</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">26</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">27</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">28</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">29</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">30</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">31</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">32</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">33</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">34</span>
+                    <span class="grid_cell grid_cell-gd" id="cambio">35</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--
+<script type="text/javascript" src="../solicitud/calendar.js"></script>
+<script type="text/javascript">
+    let calendar = new calendar('calendar');
+</script>
+
+<button (click)="hola('calendar')" id="login1" class="btn btn-primary p-3">LOG IN</button>
+-->
+
+<div class="col-md-12 d-flex justify-content-center">
+    <!--<div class="d-flex justify-content-center">
+        <div class="border rounded">
+            <table class="rounded table-striped">
+                <thead>
+                    <tr>
+                        <th colspan="7">
+                            <span class="btn btn-group">
+                                <button class="btn btn-secondary"><</button>
+                                <a class="btn active border-top border-bottom">February 2012</a>
+                                <button class="btn btn-secondary">></button>
+                            </span>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Su</th>
+                        <th>Mo</th>
+                        <th>Tu</th>
+                        <th>We</th>
+                        <th>Th</th>
+                        <th>Fr</th>
+                        <th>Sa</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-muted">29</td>
+                        <td class="text-muted">30</td>
+                        <td class="text-muted">31</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>6</td>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                        <td>10</td>
+                        <td>11</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>13</td>
+                        <td>14</td>
+                        <td>15</td>
+                        <td>16</td>
+                        <td>17</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>19</td>
+                        <td class="btn-primary rounded"><strong>20</strong></td>
+                        <td>21</td>
+                        <td>22</td>
+                        <td>23</td>
+                        <td>24</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>26</td>
+                        <td>27</td>
+                        <td>28</td>
+                        <td>29</td>
+                        <td class="text-muted">1</td>
+                        <td class="text-muted">2</td>
+                        <td class="text-muted">3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>-->
+    <div class="col-md-4 mt-3 mb-5">
+        <div>
+            <form>
+                <div class="form-group">
+                    <label for="elemento_principal">Seleccione el elemento principal.</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>SELECCIONAR..</option>
+                        <option>COMPUTADOR</option>
+                        <option>GAFAS VR</option>
+                        <option>JUMANJI</option>
+                        <option>SMART TV</option>
+                        <option>MESA DE ESTUDIO</option>
+                      </select>
+                    </div>
+
+                <fieldset disabled>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="nombre_ep">Nombre elemento principal :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="nombre_ep" class="form-control" value="COMPUTADOR">
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset disabled>
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label for="nombre_ep">Inicio prestamo :</label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" id="nombre_ep" class="form-control" value="6:00 am">
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="row mt-2">
+                    <div class="col-md-6">
+                        <label for="nombre_ep">Tiempo de prestamo :</label>
+                    </div>
+
+                    <div class="input-group col-md-6">
+                        <div class="input-group-prepend rounded-right">
+                            <span class="input-group-text" id="basic-addon1">HORAS:</span>
+                        </div>
+                        <select class="form-control rounded-left" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group mt-2" id="more">
+                    <label for="elemento_secundario">Seleccione un elemento secundario.</label>
+                    <select class="form-control" id="elemento_secundario">
+                        <option>SELECCIONAR..</option>
+                        <option>COMPUTADOR</option>
+                        <option>GAFAS VR</option>
+                        <option>JUMANJI</option>
+                        <option>SMART TV</option>
+                        <option>MESA DE ESTUDIO</option>
+                    </select>
+                </div>
+
+                <div class="text-center">
+                    <label (click)="more()" id="more-button" class="btn p-2 m-2 border">MORE</label>
+                </div>
+
+                <div class="form-group text-center mt-5">
+                    <button [routerLink]="[ '/solicitud' ]" type="submit " class="px-5 py-2 btn btn-primary">CREAR SOLICITUD</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</div>
+</router-outlet>

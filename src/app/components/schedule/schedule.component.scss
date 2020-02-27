@@ -1,0 +1,16 @@
+.barra{
+    &.alone{
+        width: 80vw;
+        display: block;
+        margin: 0 auto;
+        clear: both;
+        & > a{
+            display: inline-block;
+        }
+        & > .navegacion {
+            padding-top: 5vh;
+            float: right;
+            display: inline-block;
+        }
+    }
+}
