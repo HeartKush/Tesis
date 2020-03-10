@@ -5,7 +5,7 @@ import { AboutusComponent} from './components/aboutus/aboutus.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { SolicitudComponent } from './components/solicitud/solicitud.component';
 import { LoginComponent } from './components/login/login.component';
-import { TortoloComponent } from './components/tortolo/tortolo.component';
+
 
 const routes: Routes = [
   {path: 'inicio', component: HomeComponent},
@@ -13,7 +13,6 @@ const routes: Routes = [
   {path: 'agenda', component: ScheduleComponent},
   {path:  'login',  component: LoginComponent},
   {path:  'solicitud',  component: SolicitudComponent},
-  {path:  'tortolo',  component: TortoloComponent}
 ];
 
 @NgModule({

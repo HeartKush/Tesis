@@ -8,7 +8,6 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { ScheduleComponent } from './components/schedule/schedule.component';
 import { SolicitudComponent } from './components/solicitud/solicitud.component';
 import { LoginComponent } from './components/login/login.component';
-import { TortoloComponent } from './components/tortolo/tortolo.component';
 
 
 
@@ -20,7 +19,7 @@ import { TortoloComponent } from './components/tortolo/tortolo.component';
     ScheduleComponent,
     SolicitudComponent,
     LoginComponent,
-    TortoloComponent
+
   
   ],
   imports: [
